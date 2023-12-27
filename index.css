@@ -1,0 +1,171 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+}
+
+
+.pic1 {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pic1 img {
+    border-radius: 50%;
+    margin-top: 10px; 
+}
+
+.me{
+    display: flex;
+    padding-left: 10px;
+}
+.pic1 h1 {
+    font-size: 55px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 10px; 
+}
+
+.buttons button {
+    margin-top: 10px; 
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button img {
+    width: 30px;
+    height: 30px;
+}
+.aboutme{
+    margin-top: 20px;
+    display: inline;
+    font-size: larger;
+    align-items: center;
+
+}
+
+.projects h2{
+    font-size: 30px;
+    color: aqua;
+}
+
+.project1 h2{
+    margin-top: 40px;
+    margin-left:60px;
+    text-align:justify;
+    font-size: 20px;
+}
+
+.project1 h3
+{
+    font-size: 16px;
+    
+}
+
+.project1 img
+{
+    height: 300px;
+    width: 650px;
+    border-radius: 0px;
+    padding: auto;
+    margin-left: 10px;
+}
+.project1 button
+{
+    border: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: aqua;
+}
+.txt{
+    text-align: left;
+    
+    margin-left: 90px;
+}
+.img{
+    height: 300px;
+    width: 650px;
+    border-radius: 0px;
+    padding: auto;
+    margin-left: 10px;
+}
+.ai-assistant-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ai-assistant-text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 90px;
+}
+
+.ai-assistant-image {
+    width: 100%; 
+    max-width: 650px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.ai-assistant-container
+{
+    align-items: center;
+}
+
+.ai-assistant-container button {
+    border: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.project3-text
+{
+    text-align: left;
+    margin-left: 90px;
+}
+.contact button
+{
+    background-color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+.project4 button
+{
+    height: 20px;
+    width: 100px;
+    margin-top: 10px;
+}
+.pro
+{
+    text-align: left;
+    margin-left: 90px;
+}
