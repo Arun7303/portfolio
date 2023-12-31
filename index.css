@@ -1,13 +1,14 @@
 @media only screen and (max-width: 600px) {
     .project3 button {
-        width: 100%; 
+        width: 100%;
         margin-left: 0;
     }
 
     .project3-text {
-        margin-left: 0; 
+        margin-left: 0;
     }
 }
+
 body {
     background-color: black;
     color: white;
@@ -26,13 +27,14 @@ body {
 
 .pic1 img {
     border-radius: 50%;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
-.me{
+.me {
     display: flex;
     padding-left: 10px;
 }
+
 .pic1 h1 {
     font-size: 55px;
     color: white;
@@ -41,11 +43,11 @@ body {
 }
 
 .buttons {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .buttons button {
-    margin-top: 10px; 
+    margin-top: 10px;
     padding: 10px 20px;
     font-size: 18px;
     background-color: #000000;
@@ -58,7 +60,8 @@ body {
     width: 30px;
     height: 30px;
 }
-.aboutme{
+
+.aboutme {
     margin-top: 20px;
     display: inline;
     font-size: larger;
@@ -66,34 +69,32 @@ body {
 
 }
 
-.projects h2{
+.projects h2 {
     font-size: 30px;
     color: aqua;
 }
 
-.project1 h2{
+.project1 h2 {
     margin-top: 40px;
-    margin-left:60px;
-    text-align:justify;
+    margin-left: 60px;
+    text-align: justify;
     font-size: 20px;
 }
 
-.project1 h3
-{
+.project1 h3 {
     font-size: 16px;
-    
+
 }
 
-.project1 img
-{
+.project1 img {
     height: 300px;
     width: 650px;
     border-radius: 0px;
     padding: auto;
     margin-left: 10px;
 }
-.project1 button
-{
+
+.project1 button {
     border: aqua;
     border-radius: 10px;
     height: 30px;
@@ -102,18 +103,21 @@ body {
     margin-top: 30px;
     background-color: aqua;
 }
-.txt{
+
+.txt {
     text-align: left;
-    
+
     margin-left: 90px;
 }
-.img{
+
+.img {
     height: 300px;
     width: 650px;
     border-radius: 0px;
     padding: auto;
     margin-left: 10px;
 }
+
 .ai-assistant-container {
     text-align: center;
     margin-top: 40px;
@@ -127,14 +131,13 @@ body {
 }
 
 .ai-assistant-image {
-    width: 100%; 
+    width: 100%;
     max-width: 650px;
     border-radius: 5px;
     margin-top: 20px;
 }
 
-.ai-assistant-container
-{
+.ai-assistant-container {
     align-items: center;
 }
 
@@ -149,13 +152,12 @@ body {
     cursor: pointer;
 }
 
-.project3-text
-{
+.project3-text {
     text-align: left;
     margin-left: 90px;
 }
-.contact button
-{
+
+.contact button {
     background-color: aqua;
     border-radius: 10px;
     height: 30px;
@@ -168,14 +170,64 @@ body {
 
 
 
-.project4 button
-{
+.project4 button {
     height: 20px;
     width: 100px;
     margin-top: 10px;
 }
-.pro
-{
+
+.pro {
     text-align: left;
     margin-left: 90px;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
 }

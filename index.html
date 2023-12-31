@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/img1.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -55,22 +56,39 @@
                 classifiers. <br></h3>
             <h2>How This Code Works?</h2>
             <div class="txt">
-                1)Person Details:- Purpose: This function is designed to collect and store individuals' information in a
-                database.
-                Additionally, it captures the person's image for training purposes.<br>
-                2)Train Data:- Purpose: Clicking this button opens a new window where data is trained using the <b>Local
-                    Binary Patterns Histograms</b> method.
-                The trained data is then stored in the classifiers.xml file.
-                3)Photos:- Purpose: By clicking this button, all the photos taken are displayed.<br>
-                4)Scan Face:- Purpose: Upon clicking this button, a new window opens for real-time scanning of a
+                •)Person Details:- Purpose: This function is designed to collect and store individuals' information in a
+                database. Additionally, it captures the person's image for training purposes.<br>
+
+                •)Train Data:- Purpose: Clicking this button opens a new window where data is trained using the <b>Local
+                    inary Patterns Histograms</b> method. The trained data is then stored in the classifiers.xml file.
+
+                •)Photos:- Purpose: By clicking this button, all the photos taken are displayed.<br>
+
+                •)Scan Face:- Purpose: Upon clicking this button, a new window opens for real-time scanning of a
                 person's face.
                 The details of the scanned face are displayed in real-time.<br>
             </div>
 
-            <img src="FRS\Screenshot 2023-10-23 193016.png" alt="image1">
-            <img src="FRS\Screenshot 2023-10-23 193134.png" alt="image4">
-            <img src="FRS\Screenshot 2023-10-23 193218.png" alt="image2">
-            <img src="FRS\Screenshot 2023-10-23 193242.png" alt="image3"><br><br>
+            <div class="carousel-container">
+                <div class="carousel" id="imageCarousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="FRS/Screenshot 2023-10-23 193016.png" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="FRS/Screenshot 2023-10-23 193134.png" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="FRS/Screenshot 2023-10-23 193218.png" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="FRS/Screenshot 2023-10-23 193242.png" alt="Image 4">
+                        </div>
+                    </div>
+                    <a class="carousel-control prev" href="#" onclick="changeSlide(-1); return false;">&#10094;</a>
+                    <a class="carousel-control next" href="#" onclick="changeSlide(1); return false;">&#10095;</a>
+                </div>
+            </div>
             <a href="https://github.com/Arun7303/Face-Recognisition"> <button>View code</button></a>
             <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -102,9 +120,10 @@
                     query."<br>
 
                     •)Mathematical Operations:<br>
-                    Basic mathematical operations such as addition, subtraction, multiplication, and division can be performed using the assistant.<br>
+                    Basic mathematical operations such as addition, subtraction, multiplication, and division can be
+                    performed using the assistant.<br>
 
-                    
+
 
                 </p>
                 <img src="AI assistant.png" alt="AI ASSISTANT" class="ai-assistant-image">
@@ -129,46 +148,90 @@
                     signing up.
 
                 </p>
-                <img src="Web\login.png" alt="login page">
+                <!-- <img src="Web\login.png" alt="login page">
                 <img src="Web\signup.png" alt="signup page">
                 <img src="Web\reset.png" alt="reset password">
                 <img src="Web\resetpass.png" alt="reset">
                 <img src="Web\otp.png" alt="OTP Page">
-                <img src="Web\final.png" alt="final page"><br>
-                <a href="https://github.com/Arun7303/Website_with_otp"> <button>View code</button></a>
-                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-                <hr style="height:2px;border-width:0;color:gray;background-color:gray"><br><br>
-            </div>
+                <img src="Web\final.png" alt="final page"><br> -->
+                <div class="carousel-container">
+                    <div class="carousel" id="imageCarousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Web/login.png" alt="Login Page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Web/signup.png" alt="Signup Page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Web/reset.png" alt="Reset Password">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Web/resetpass.png" alt="Reset">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Web/otp.png" alt="OTP Page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Web/final.png" alt="Final Page">
+                            </div>
+                        </div>
+                        <a class="carousel-control prev" href="#" onclick="changeSlide(-1); return false;">&#10094;</a>
+                        <a class="carousel-control next" href="#" onclick="changeSlide(1); return false;">&#10095;</a>
 
-            <div class="project4">
-                <h2>Other projects</h2>
-                <div class="pro">
-                    <h3>Basic Calculator</h3>
-                    <a href="https://github.com/Arun7303/Python_Calculater"> <button>View code</button></a>
-                    <h3>Image Encryption</h3>
-                    <a href="https://github.com/Arun7303/Imagr-Encryption"> <button>View code</button></a>
+                    </div>
+                    <a href="https://github.com/Arun7303/Website_with_otp"> <button>View code</button></a>
+
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray"><br><br>
+                </div>
+
+                <div class="project4">
+                    <h2>Other projects</h2>
+                    <div class="pro">
+                        <h3>Basic Calculator</h3>
+                        <a href="https://github.com/Arun7303/Python_Calculater"> <button>View code</button></a>
+                        <h3>Image Encryption</h3>
+                        <a href="https://github.com/Arun7303/Imagr-Encryption"> <button>View code</button></a>
+                    </div>
+
+
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
                 </div>
 
 
-                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <p class="contact-text">
+                    Arun Adhikari<br>
+                    adhikari.arun2812@gmail.com<br>
+                    Mumbai,Maharashtra
+
+                </p>
+                <a href="resume.pdf"><button><b>Download Resume</b></button></a>
             </div>
 
 
-        </div>
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <p class="contact-text">
-                Arun Adhikari<br>
-                adhikari.arun2812@gmail.com<br>
-                Mumbai,Maharashtra
 
-            </p>
-            <a href="resume.pdf"><button><b>Download Resume</b></button></a>
         </div>
 
 
+        <script>
+            let currentSlide = 0;
 
-    </div>
+            function changeSlide(direction) {
+                const carousel = document.getElementById('imageCarousel');
+                const carouselItems = document.querySelector('.carousel-inner');
+                const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+                const translateValue = -currentSlide * 100 + '%';
+                carouselItems.style.transform = 'translateX(' + translateValue + ')';
+            }
+
+        </script>
 
 </body>
 
