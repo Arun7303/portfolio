@@ -70,8 +70,8 @@
             </div>
 
             <div class="carousel-container">
-                <div class="carousel" id="imageCarousel">
-                    <div class="carousel-inner">
+                <div class="carousel" id="imageCarouselFaceRecognition">
+                    <div class="carousel-inner face-recognition">
                         <div class="carousel-item active">
                             <img src="FRS/Screenshot 2023-10-23 193016.png" alt="Image 1">
                         </div>
@@ -85,8 +85,8 @@
                             <img src="FRS/Screenshot 2023-10-23 193242.png" alt="Image 4">
                         </div>
                     </div>
-                    <a class="carousel-control prev" href="#" onclick="changeSlide(-1); return false;">&#10094;</a>
-                    <a class="carousel-control next" href="#" onclick="changeSlide(1); return false;">&#10095;</a>
+                    <a class="carousel-control prev" href="#" onclick="changeSlideFaceRecognition(-1); return false;">&#10094;</a>
+                    <a class="carousel-control next" href="#" onclick="changeSlideFaceRecognition(1); return false;">&#10095;</a>
                 </div>
             </div>
             <a href="https://github.com/Arun7303/Face-Recognisition"> <button>View code</button></a>
@@ -142,21 +142,16 @@
                     •) This website allows you to perform 2-step verification. When logging in, you will need to enter
                     an OTP that will be sent to your email.<br>
                     •) During the sign-up process on the website, for enhanced security, the password is hashed using
-                    the "SHA-256" algorithm and stored in the database.<br>
+                    the "SHA-256" algorithm and stored
+                                        in the database.<br>
                     •) When logging in on the website, it will first check the entered password against the hashed
                     password in the database. If the passwords match, you will receive an OTP in the email you used for
                     signing up.
 
                 </p>
-                <!-- <img src="Web\login.png" alt="login page">
-                <img src="Web\signup.png" alt="signup page">
-                <img src="Web\reset.png" alt="reset password">
-                <img src="Web\resetpass.png" alt="reset">
-                <img src="Web\otp.png" alt="OTP Page">
-                <img src="Web\final.png" alt="final page"><br> -->
                 <div class="carousel-container">
-                    <div class="carousel" id="imageCarousel">
-                        <div class="carousel-inner">
+                    <div class="carousel" id="imageCarouselLoginPage">
+                        <div class="carousel-inner login-page">
                             <div class="carousel-item active">
                                 <img src="Web/login.png" alt="Login Page">
                             </div>
@@ -176,63 +171,73 @@
                                 <img src="Web/final.png" alt="Final Page">
                             </div>
                         </div>
-                        <a class="carousel-control prev" href="#" onclick="changeSlide(-1); return false;">&#10094;</a>
-                        <a class="carousel-control next" href="#" onclick="changeSlide(1); return false;">&#10095;</a>
+                        <a class="carousel-control prev" href="#" onclick="changeSlideLoginPage(-1); return false;">&#10094;</a>
+                        <a class="carousel-control next" href="#" onclick="changeSlideLoginPage(1); return false;">&#10095;</a>
 
                     </div>
-                    <a href="https://github.com/Arun7303/Website_with_otp"> <button>View code</button></a>
-
-                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-                    <hr style="height:2px;border-width:0;color:gray;background-color:gray"><br><br>
                 </div>
+                <a href="https://github.com/Arun7303/Website_with_otp"> <button>View code</button></a>
 
-                <div class="project4">
-                    <h2>Other projects</h2>
-                    <div class="pro">
-                        <h3>Basic Calculator</h3>
-                        <a href="https://github.com/Arun7303/Python_Calculater"> <button>View code</button></a>
-                        <h3>Image Encryption</h3>
-                        <a href="https://github.com/Arun7303/Imagr-Encryption"> <button>View code</button></a>
-                    </div>
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray"><br><br>
+            </div>
 
-
-                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <div class="project4">
+                <h2>Other projects</h2>
+                <div class="pro">
+                    <h3>Basic Calculator</h3>
+                    <a href="https://github.com/Arun7303/Python_Calculater"> <button>View code</button></a>
+                    <h3>Image Encryption</h3>
+                    <a href="https://github.com/Arun7303/Imagr-Encryption"> <button>View code</button></a>
                 </div>
 
 
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
-            <div class="contact">
-                <h2>Contact Me</h2>
-                <p class="contact-text">
-                    Arun Adhikari<br>
-                    adhikari.arun2812@gmail.com<br>
-                    Mumbai,Maharashtra
-
-                </p>
-                <a href="resume.pdf"><button><b>Download Resume</b></button></a>
-            </div>
-
 
 
         </div>
+    </div>
 
 
-        <script>
-            let currentSlide = 0;
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-text">
+            Arun Adhikari<br>
+            adhikari.arun2812@gmail.com<br>
+            Mumbai,Maharashtra
 
-            function changeSlide(direction) {
-                const carousel = document.getElementById('imageCarousel');
-                const carouselItems = document.querySelector('.carousel-inner');
-                const totalSlides = document.querySelectorAll('.carousel-item').length;
+        </p>
+        <a href="resume.pdf"><button><b>Download Resume</b></button></a>
+    </div>
 
-                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-                const translateValue = -currentSlide * 100 + '%';
-                carouselItems.style.transform = 'translateX(' + translateValue + ')';
-            }
-
-        </script>
 
 </body>
+
+<script>
+    let currentSlideFaceRecognition = 0;
+    let currentSlideLoginPage = 0;
+
+    function changeSlideFaceRecognition(direction) {
+        const carouselItems = document.querySelectorAll('.carousel-inner.face-recognition')[0];
+        const totalSlides = document.querySelectorAll('.carousel-item.face-recognition').length;
+
+        currentSlideFaceRecognition = (currentSlideFaceRecognition + direction + totalSlides) % totalSlides;
+
+        const translateValue = -currentSlideFaceRecognition * 100 + '%';
+        carouselItems.style.transform = 'translateX(' + translateValue + ')';
+    }
+
+    function changeSlideLoginPage(direction) {
+        const carouselItems = document.querySelectorAll('.carousel-inner.login-page')[0];
+        const totalSlides = document.querySelectorAll('.carousel-item.login-page').length;
+
+        currentSlideLoginPage = (currentSlideLoginPage + direction + totalSlides) % totalSlides;
+
+        const translateValue = -currentSlideLoginPage * 100 + '%';
+        carouselItems.style.transform = 'translateX(' + translateValue + ')';
+    }
+</script>
 
 </html>
